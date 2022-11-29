@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class BasicListMethods {
@@ -26,7 +27,23 @@ public class BasicListMethods {
         //adding string elem
         stringList.add(newS);
         System.out.println(stringList);
-        stringList2.remove(newS);
+        //what size of list?
+        System.out.println(stringList.size());
+        //remove elem
+        stringList.remove(newS);
         System.out.println(stringList);
+        System.out.println(stringList.size());
+        //adding with index
+        stringList.add(1,"secondElementNew");
+        String[] massString=new String[5];
+        //to mass
+        stringList.toArray(massString);
+        System.out.println("In massive with name MassString "+Arrays.toString(massString));
+        //
+        System.out.println("For each stringList");
+        for(String foreach:stringList){
+            System.out.println(foreach);
+        }
+
     }
 }
